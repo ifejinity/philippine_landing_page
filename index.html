@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Philippines</title>
+</head>
+<body class="m-0 p-0 bg-white font-poppins">
+    <nav class="absolute z-10 w-screen grid grid-cols-1 md:px-10 p-4 md:grid-cols-navbar gap-5 bg-black/20">
+        <div class="grid grid-cols-2">
+            <p class="text-4xl font-bold text-white">Philippines</p>
+            <div class="justify-end flex">
+                <i class="bi bi-list text-4xl block md:hidden text-white" id="menu"></i>
+                <i class="bi bi-x-lg text-3xl hidden text-white" id="menu"></i>
+            </div>
+        </div>
+        <div class="md:grid hidden fixed right-3 md:static p-10 gap-10 md:p-0 rounded-lg md:grid-cols-navbarBtn grid-cols-1 text-black md:text-white  top-20 md:top drop-shadow-lg md:drop-shadow-none bg-white md:bg-transparent" id="navButtons">
+            <button>Home</button>
+            <button>About us</button>
+            <button>Book now</button>
+            <button>Contact us</button>
+        </div>
+    </nav>
+    <video class="fixed w-screen h-screen object-cover" autoplay muted loop>
+        <source src="./src/resources/video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <script src="./index.js"></script>
+</body>
+</html>
